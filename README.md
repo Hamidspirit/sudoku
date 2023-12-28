@@ -1,2 +1,2 @@
 # sudoku
-sudoku game idk
+sudoku game 
