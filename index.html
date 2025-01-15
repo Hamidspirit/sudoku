@@ -1,26 +1,27 @@
-
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name = "viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Puzzle</title>
+    <link rel="stylesheet" href="sudoku.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sudoku Puzzle</h1>
+        <div class="controls">
+            <label for="difficulty">Difficulty: </label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button onclick="generatePuzzle()">New Puzzle</button>
+        </div>
+        <div id="board" class="board"></div>
+        <div id="status"></div>
+    </div>
 
-    <link rel="stylesheet" href="./sudoku.css">
-    <script src="./sudoku.js"></script>
-  </head>
-
-  <body>
-    <h1>sudoku</h1>
-    <hr>
-    <h2 id = "errors">0</h2>
-
-    <!---the board 9*9-->
-    <div id = "board"></div>
-    <br>
-
-    <div id = "numbers"></div>
-
-  </body>
-
-
-
+    <script src="sudoku.js"></script>
+</body>
 </html>
